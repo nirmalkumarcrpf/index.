@@ -1,0 +1,30 @@
+<html>
+  <head>
+    
+    <title>Odd and even number</title>
+    
+    <script>
+    function check(){
+        let x = document.querySelector("#number1").value;
+        var regex=/^[0-9]+$/;
+        if (x.match(regex)){
+        
+        document.querySelector("#result").innerHTML ="This is Number" ;
+      }else{
+
+        document.querySelector("#result").innerHTML ="This is String" ;
+      }
+    }
+      </script>
+    
+  </head>
+  <body>
+    
+    <h1>Odd and even number</h1>
+    
+    <input type="text" name="" onkeyup="check()" placeholder="enter your number" id="number1">
+    
+    <button >click</button>
+    <span id="result"></span>
+    </body>
+</html>
